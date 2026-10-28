@@ -16,7 +16,7 @@ import re
 # 2 ) re.search()
 # text = 'Python is easy and java also'
 
-# result = re.search('java' , text)
+# result = re.search('easy' , text)
 # if result :
 #     print('Match found')
 # else :
@@ -37,10 +37,16 @@ import re
 
 # print(result)
 
+
+# text = 'python is easy and java also , but python is simple , python is good'
+# result  = re.findall('is' , text)
+
+# print(result)
+
 # text = "mark : 85 90 78 95"
 # numbers = re.findall(r'\d+' , text)
-# # \d => digits 0-9 
-# # + => one or more items 
+# # # \d => digits 0-9 
+# # # + => one or more items 
 # print(numbers)
 
 # 3 ) re.split() => transform into list...
@@ -53,12 +59,12 @@ import re
 # print(result) 
 
 # 4 ) re.sub() => replace all matches patterns ..
-# text = 'python is easy'
+text = 'python is easy'
 # print(text)
-# result = re.sub('python','javascript',text)
-# print(result)
+result = re.sub('python','javascript',text)
+print(result)
 
-# text = 'order Id : 238725'
-# result = re.sub(r"\d" ,"*" , text)
-# print(result)
+text = 'order Id : 238725'
+result = re.sub(r"\d" ,"*" , text)
+print(result)
 
